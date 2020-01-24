@@ -5,8 +5,61 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <header class="main-header">
+      <nav class="main-navigation">
+        <ul class="navigation-list">
+      <!--Ссылки навигации по главной кроме фото-видео и каталог?-->
+          <li><a href="#info">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#state-map">Карта штата</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+      <!--Лого в отдельном блоке-->
+      <div class="main-logo">
+        <img src="#" width="140" height="71" alt="Sedona logo">
+      </div>
+    </header>
+    <main class="container">
+      <h1 class="visually-hidden">Сайт города Седона</h1>
+      <section class="welcome-block">
+        <img src="#" alt="background-photo" width="1200" height="773" id="background-img">
+        <img src="#" alt="welcome" width="459" height="353" id="welcome-img">
+        <img src="#" alt="polygon" width="1203" height="59" id="polygon">
+      </section>
+      <section class="description">
+        <h2>Седона — небольшой городок в Аризоне,
+          заслуживающий большего!
+        </h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </section>
+      <p><a href="info"></a></p>
+      <!-- Здесь будeт 5 причин и блок с рекомендациями-->
+      <section class="interest">
+        <h3>Заинтересовались?</h3>
+        <p>Укажите предполагаемые даты поездки,<br>
+          и мы покажем вам лучшие предложения гостиниц в седоне
+        </p>
+        <!-- <button type="text" class="search">Поиск гостиницы в седоне</button> -->
+        <!-- Где-то здесь будeт форма -->
+      </section>
+      <p><a href="state-map"></a></p>
+        <!-- Здесь будeт карта штата -->
+    </main>
+    <footer class="main-footer">
+      <p class="footer-conacts">
+        #VISITSEDONA <br>
+        Тел: +7(495) 666-02-66
+      </p>
+      <ul class="footer-social">
+        <li><a href="#">Vkontakte</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        </ul>
+      <figure class="footer-copiryght">
+        <p>WEBSITE BY</p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" alt="HTML Academy logo" width="115" height="41"></a>
+      </figure>
+    </footer>
   </body>
 </html>
