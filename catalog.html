@@ -20,7 +20,6 @@
     </header>
     <main class="main-content">
         <h1 class="visually-hidden">Гостиницы в Седоне</h1>
-        <!-- Начало формы -->
         <form class="filters-form" action="https://echo.htmlacademy.ru" method="POST">
             <fieldset class="infrastructure">
                 <legend>Инфраструктура</legend>
@@ -47,11 +46,16 @@
             <fieldset class="daily-cost">
                 <legend>Стоимость в сутки (Р):</legend>
                 <p class="daily-cost-up-to"><span class="cost-up">от 0</span><span class="cost-to">до 3000</span></p>
-                <input type="range" min="0" max="3000" step="1" value="2500" name="range"> 
-                <button class="filter-button" type="submit">Показать</button>
+                <div class="range-slider">
+                    <input class="min" name="range_1" type="range" min="0" max="3000" value="0" />
+                    <input class="max" name="range_1" type="range" min="0" max="3000" value="2500" />
+                    <div class="range-slider-track">
+                        <span class="range-slider-pin range_min"></span>
+                        <span class="range-slider-pin range_max"></span>
+                    </div>
+                </div>
             </fieldset> 
         </form>
-         <!-- Конец формы -->
         <article class="hotels">
             <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
             <section class="hotels-filter">
@@ -62,7 +66,10 @@
                     <li class="filter-option"><button type="submit">По типу</button></li>
                     <li class="filter-option"><button type="submit">По рейтингу</button></li>
                 </ul>
-                <span class="arrows"><!---две картинки стрелочек--></span>
+                <div class="icon-buttons">
+                    <button type="button" class="icon-up"></button>
+                    <button type="button" class="icon-down"></button>
+                </div>
             </section>
             <section class="hotel">
                 <div class="hotel-picture">
