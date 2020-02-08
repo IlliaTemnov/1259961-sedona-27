@@ -13,50 +13,58 @@
   <div class="container">
     <header class="main-header">
       <nav class="main-nav">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="info.html">Информация</a></li>
-          <li class="nav-item"><a href="media.html">Фото и видео</a></li>
-          <li class="nav-item"><a href="map.html">Карта штата</a></li>
-          <li class="nav-item"><a href="catalog.html">Гостиницы</a></li>
-        </ul>
-        <img src="img/logos/logo-sedona.svg" width="140" height="71" alt="Логотип города Седона" class="logo">
+          <ul class="nav-list">
+              <li class="nav-item"><a href="info.html">Информация</a></li>
+              <li class="nav-item"><a href="media.html">Фото и видео</a></li>
+              <li class="nav-item"><a href="map.html">Карта штата</a></li>
+              <li class="nav-item active-page"><a href="catalog.html">Гостиницы</a></li>
+          </ul>
       </nav>
-    </header>
+      <img src="img/logos/logo-sedona.svg" width="140" height="71" alt="Логотип города Седона">
+    </header> 
     <main class="main-content">
       <section class="content">
         <h1 class="visually-hidden">Сайт города Седона</h1>
         <img src="img/intro-welcome.svg" alt="Добро пожаловать в Седону" width="459" height="353">
-        <!-- <div class="polygon"></div>-->
+        <span class="polygon"></span>
       </section>
       <section class="lead">
+        <div class="blocktext">
         <h2 class="title">Седона — небольшой городок в Аризоне, <br>
           заслуживающий большего!</h2>
         <p class="text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
       </section>
       <article class="features">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <section class="feature-items">
           <div class="feature-item-blue">
-            <h3 class="title">Настоящий городок</h3>
+            <h3 class="title">Настоящий 
+              городок</h3>
             <span class="text">&ndash; №1 &ndash;</span>
-            <p class="text"> Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <p class="text"> Седона — не аттракцион для туристов,
+               там течёт своя жизнь</p>
           </div>
           <img class="feature-image" src="../img/feature-picture.jpg" alt="Фотография городка" width="800" height="256">
         </section>
         <ul class="advices-list">
           <li class="advices-item">
             <!--icon-->
-            <h3 class="title">Жилье</h3>
-            <p class="text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <h3 class="title">Жильё</h3>
+            <p class="text">Рекомендуем пожить в настоящем
+               мотеле, все как в кино!</p>
           </li>
           <li class="advices-item">
             <!--icon-->
-            <p class="text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <h3 class="title">Еда</h3>
+            <p class="text">Всегда заказывайте фирменный бургер,
+               вы не разочаруетесь!</p>
           </li>
           <li class="advices-item">
             <!--icon-->
             <h3 class="title">Сувениры</h3>
-            <p class="text">Не только китайского, но и местного производства!</p>
+            <p class="text">Не только китайского, 
+              но и местного производства!</p>
           </li>
         </ul>
         <section class="feature-items">
@@ -69,19 +77,25 @@
         </section>
         <ul class="feature-items">
           <li class="feature-item">
-            <h3 class="title">Небольшая площадь</h3>
+            <h3 class="title">Небольшая 
+              площадь</h3>
             <span class="text">&ndash; №3 &ndash;</span>
-            <p class="text">Все достопримечательности находятся очень близко</p>
+            <p class="text">Все достопримечательности 
+              находятся очень близко</p>
           </li>
           <li class="feature-item">
-            <h3 class="title">Красивая дорога</h3>
+            <h3 class="title">Красивая 
+              дорога</h3>
             <span class="text">&ndash; №4 &ndash;</span>
-            <p class="text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="text">Ехать в Седону из Лас-Вегаса совсем
+               не скучно!</p>
           </li>
           <li class="feature-item">
-            <h3 class="title">Мало туристов</h3>
+            <h3 class="title">Мало 
+              туристов</h3>
             <span class="text">&ndash; №5 &ndash;</span>
-            <p class="text">Большинство едет в гранд каньон и толпится там</p>
+            <p class="text">Большинство едет в гранд каньон
+               и толпится там</p>
           </li>
         </ul>
       </article>
@@ -90,7 +104,6 @@
         <p class="text">Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
-        <div class="popap-wrap">
           <button type="button" class="button reserve">Поиск гостиницы в седоне</button>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
             <p>
@@ -111,7 +124,6 @@
             </p>
             <button type="submit" class="button more">Найти</button>
           </form>
-        </div>
       </section>
       <div class="state-map">
         <span><!-- background --></span>
