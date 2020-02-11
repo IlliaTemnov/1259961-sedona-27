@@ -35,6 +35,7 @@ a {
     right: 0;
     left: 0;
     margin: auto;
+    z-index: 1;
 }
 .nav-list { 
     padding: 0;
@@ -91,15 +92,21 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 508px;
+    position: relative;
+}
+.content::after {
+    content: "";
+    content: url("../img/intro-mask.svg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: -8px;
 }
 .content img {
     padding-top: 76px;
     display:block;
     margin: auto;
-}
-.polygon {
-    display: inline-block;
-    align-items: baseline;
 }
 .lead {
     background-color: white;
@@ -158,6 +165,12 @@ a {
     white-space: pre-line;
     line-height: 21px;
     align-items: center;
+}
+.advices-item::before {
+content: "";
+width: 75px;
+height: 72px;
+background-image: url("../img/icons/icon-1.svg");
 }
 .feature-items {
     margin: 0;
@@ -362,7 +375,7 @@ a {
     color: #ffffff4d;
 }
 .button.reserve  {
-    margin: 0;
+    margin-bottom: 5px;
     color: #ffffff;
     text-decoration: none;
     background: #766357;
@@ -475,7 +488,7 @@ a {
     font-size: 16px;
     line-height: 21px;
 }
-  .price-controls {
+.price-controls {
     position: relative;
     height: 36px;
     margin-bottom: 20px;
@@ -483,7 +496,7 @@ a {
     border: 2px solid #ffffff;
     border-radius: 2px;
 }
-  .price-controls::after {
+.price-controls::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -493,19 +506,19 @@ a {
     background: #ffffff;
     transform: translate(-50%, -50%);
   }
-  .price-controls label {
+.price-controls label {
     display: inline-block;
     font-size: 14px;
     line-height: 38px;
     vertical-align: top;
     cursor: pointer;
   }
-  .price-controls .min-price,
-  .price-controls .max-price {
+.price-controls .min-price,
+.price-controls .max-price {
     width: 90px;
     padding-left: 65px;
   }
-  .price-controls input {
+.price-controls input {
     width: 50px;
     margin: 0;
     color: inherit;
@@ -513,20 +526,20 @@ a {
     background: none;
     border: none;
 }
-  .range-controls {
+.range-controls {
     position: relative;
     margin-bottom: 32px;
 }
-  .range-controls .scale {
+.range-controls .scale {
     height: 2px;
     background: rgba(255, 255, 255, 0.3);
 }
-  .range-controls .bar {
+.range-controls .bar {
     width: 80%;
     height: 2px;
     background: #ffffff;
 }
-  .range-toggle {
+.range-toggle {
     position: absolute;
     top: -9px;
     width: 4px;
@@ -537,16 +550,16 @@ a {
     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
 }
-  .range-toggle:hover {
+.range-toggle:hover {
     background: #1c4f80;
 }
-  .range-toggle-min {
+.range-toggle-min {
     left: 0;
 }
-  .range-toggle-max {
+.range-toggle-max {
     left: 80%;
 }
-  .btn-transparent {
+.btn-transparent {
     display: block;
     margin: 0 auto;
     padding: 6px 35px;
@@ -559,7 +572,7 @@ a {
     border-radius: 2px;
     cursor: pointer;
 }
-  .btn-transparent:hover {
+.btn-transparent:hover {
     color: #000000;
     background: #ffffff;
 }
@@ -679,6 +692,4 @@ a {
     font-weight: bold;
     background-color: #503e33;
     color: #ffffff4d;
-}
-
 }
