@@ -253,12 +253,56 @@ a {
     padding: 0;
 }
 .search-form {
-    display: block;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
     width: 568px;
     height: 395px;
-    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top:86px;
+    margin: auto;
+    justify-content: space-around;
+}
+.search-form input[value] {
+    font-weight: bold;
+    text-transform: uppercase;  
+}
+.search-form input {
+    background-color: #f2f2f2;
+    border: none;
+    margin-left: 20px;
+}
+.search-form label{
+    font-weight: bold;
+}
+.search-form .check-out-date, .check-in-date {
+    box-sizing: border-box;
+    width: 346px;
+    height: 38px;
+    padding-left: 13px;
+}
+.check-in-date-block {
+    padding: 0;
+    margin-top: 50px;
+}
+.check-out-date-block{
+    padding: 0;
+    margin-bottom: 40px;
+}
+.adults-number-block, .child-number-block {
+    display: inline-block;
+    margin: auto;
+    padding: 0;
+}
+.wrap-container input {
+    width: 114px;
+    height: 38px;
+    text-align: center;
+}
+.child-number-block {
+    margin-right: 20px;
 }
 .state-map {
     height: 473px;
@@ -332,10 +376,17 @@ a {
 .filter {
     background-image:url("../img/filter-background.jpg");
     background-position: top center;
+    background-position: top -60px right 0;
     background-repeat: no-repeat;
+}
+.filter {
+    display: flex;
+    justify-content: start;
+    height: 217px;
 }
 .filter fieldset {
     border: none;
+    margin-top: 28px;
 }
 .filter legend {
     font-weight: bold;
@@ -343,11 +394,11 @@ a {
     color: #ffffff;
     padding: 0;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .filter ul {
     list-style: none;
-    line-height: 21px;
+    line-height: 17px;
     padding: 0;
     margin: 0;
 }
@@ -363,12 +414,30 @@ a {
     cursor: pointer;
     user-select: none;
 }
-.filter-option-list + label::before {
+.filter-option-list label::before {
     content: '';
     position: absolute;
     width: 27px;
     height: 23px;
-    border: 2px solid #000000;
+    background-image: url("../img/icons/checkbox-off.svg");
+    background-repeat: no-repeat;
+    left: -40px;
+    top: -2px;
+}
+.infrastructure {
+    margin-left: 60px;
+}
+.housing-type {
+    margin-left: 100px;
+}
+.checked label::before {
+    content: '';
+    position: absolute;
+    width: 27px;
+    height: 23px;
+    background-image: url("../img/icons/checkbox-on.svg");
+    background-repeat: no-repeat;
+    left: -40px;
 }
 .filter-option {
     color: #ffffff;
@@ -388,13 +457,14 @@ a {
     border: none;
 }
 .button.more {
-    margin: 0;
+    align-self: center;
     color: #ffffff;
     text-decoration: none;
     background:  #81b3d2;
-    padding: 19px 196px; 
-    font-size: 21px; 
-
+    width: 458px;
+    height: 58px;
+    font-size: 21px;
+    margin-bottom: 43px;
 }
 .button.more:hover, .button.more:focus {
     background-color: #669ec0;
@@ -461,21 +531,28 @@ a {
 .hotels-filter .icon-buttons {
     margin-left: 504px;
 }
+.icon-buttons {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.icon-buttons a svg {
+    width: 11px;
+    height: 10px;
+    fill:red;
+}
+.icon-buttons-bottom {
+    width: 11px;
+    height: 10px;
+    margin-left: 12px;
+    fill:red;
+}
 .hotels-filter ul {
     display: flex;
     flex-direction: row;
     align-items: center;
     list-style: none; 
 }
-.filter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 217px;
-    padding-left: 72px;
-    padding-right: 74px;
-}
-
 .filter-option a {
     border: none;
     text-transform: uppercase;
@@ -511,6 +588,9 @@ a {
 .filter-range {
     color: #ffffff;
     text-transform: uppercase;
+    margin-left: auto;
+    margin-top: 28px;
+    margin-right: 70px;
 }
 .filter-range-title {
     margin-bottom: 9px;

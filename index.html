@@ -108,22 +108,24 @@
         <div class="container-form">
           <button type="button" class="button reserve">Поиск гостиницы в седоне</button>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
-            <p>
-              <label for="check-in-date"> Дата заезда <input type="text" name="check-in-date"
-                id="check-in-date" value="24 апреля 2017" placeholder=""><span><!--Иконка календаря--></span></label>
+            <p class="check-in-date-block">
+              <label for="check-in-date"> Дата заезда: <input type="text" name="check-in-date"
+                id="check-in-date" value="24 апреля 2017" placeholder="" class="check-in-date"><span><!--Иконка календаря--></span></label>
             </p>
-            <p>
-              <label for="check-out-date"> Дата выезда <input type="text" name="check-out-date" 
-                id="check-out-date" value="24 апреля 2017" placeholder=""><span><!--Иконка календаря--></span></label>
+            <p class="check-out-date-block">
+              <label for="check-out-date"> Дата выезда: <input type="text" name="check-out-date" 
+                id="check-out-date" value="4 июля 2017" placeholder="" class="check-out-date"><span><!--Иконка календаря--></span></label>
             </p>
-            <p>
-              <label for="adults-number"> Взрослые <input type="number" name="adults-number" 
-                id="adults-number" value="" placeholder="2"></label>
+            <div class="wrap-container">
+            <p class="adults-number-block">
+              <label for="adults-number"> Взрослые: <input type="text" name="adults-number" 
+                id="adults-number" value="2" placeholder="" class="adults-number"></label>
             </p>
-            <p>
-              <label for="child-number"> Дети <input type="number" name="child-number"
-                id="child-number" value="" placeholder="0"></label>
+            <p class="child-number-block">
+              <label for="child-number"> Дети: <input type="text" name="child-number"
+                id="child-number" value="0" placeholder="" class="child-number"></label>
             </p>
+          </div>
             <button type="submit" class="button more">Найти</button>
           </form>
         </div>
