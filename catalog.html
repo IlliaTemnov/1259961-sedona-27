@@ -15,7 +15,7 @@
                 <ul class="nav-list">
                     <li><a href="info.html" class="nav-item">Информация</a></li>
                     <li ><a href="media.html" class="nav-item">Фото и видео</a></li>
-                    <li><a href="map.html"  class="nav-item">Карта штата</a></li>
+                    <li><a href="map.html"  class="nav-item ">Карта штата</a></li>
                     <li ><a class="nav-item active-page">Гостиницы</a></li>
                 </ul>
             </nav>
@@ -26,24 +26,31 @@
             <form class="filter" action="https://echo.htmlacademy.ru" method="POST">
                 <fieldset class="infrastructure">
                     <legend>Инфраструктура:</legend>
-                    <ul>
-                        <li class="filter-option-list  checked"><input class="filter-input filter-input-checkbox visually-hidden" 
-                            type="checkbox" name="swiming-pool" id="swiming-pool" checked> <label for="swiming-pool">Бассейн</label> </li>
-                        <li class="filter-option-list"><input class="filter-input filter-input-checkbox visually-hidden"
-                            type="checkbox" name="parking" id="parking"> <label for="parking">Парковка</label></li>
-                        <li class="filter-option-list"><input class=" filter-input filter-input-checkbox visually-hidden" 
-                            type="checkbox" name="wi-fi" id="wi-fi"><label for="wi-fi">wi-fi</label></li>
+                    <ul class="infrastructure-list">
+                        <li><label for="swiming-pool" class="check option">
+                            <input class="check-input" 
+                            type="checkbox" name="swiming-pool" id="swiming-pool" checked><span class="check-box"></span> Бассейн</label></li>
+                        <li><label for="parking" class="check option">
+                            <input class="check-input" 
+                            type="checkbox" name="parking" id="parking"><span class="check-box"></span> Парковка</label></li>
+                        <li><label for="wi-fi" class="check option">
+                            <input class="check-input" 
+                            type="checkbox" name="wi-fi" id="wi-fi"><span class="check-box"></span> wi-fi</label></li>
+
                     </ul>
                 </fieldset>
                 <fieldset class="housing-type">
                     <legend>Тип жилья:</legend>
-                    <ul>
-                        <li class="filter-option-list checked"><input class="filter-input filter-input-checkbox visually-hidden" 
-                            type="checkbox" name="hotel" id="hotel" checked> <label for="hotel">Гостиница</label></li>
-                        <li class="filter-option-list  checked"><input class="filter-input filter-input-checkbox visually-hidden" 
-                            type="checkbox" name="motel" id="motel" checked> <label for="motel">Мотель</label></li>
-                        <li class="filter-option-list  checked"><input class="filter-input filter-input-checkbox visually-hidden" 
-                            type="checkbox" name="apartments" id="apartments" checked><label for="apartments">Апартаменты</label></li>
+                    <ul class="hotels-list">
+                        <li><label for="hotel" class="check option">
+                            <input class="check-input" 
+                            type="checkbox" name="hotel" id="hotel" checked><span class="check-box"></span>Гостиница</label></li>
+                        <li><label for="motel" class="check option">
+                            <input class="check-input" 
+                            type="checkbox" name="motel" id="motel" checked><span class="check-box"></span>Мотель</label></li>
+                        <li><label for="apartments" class="check option">
+                            <input class="check-input" 
+                            type="checkbox" name="apartments" id="apartments" checked><span class="check-box"></span>Апартаменты</label></li>
                     </ul>
                 </fieldset>
                 <div class="filter-range">
