@@ -6,5 +6,3 @@ link.addEventListener("click", function (evt) {
     popup.classList.toggle("lift-down");
     popup.classList.toggle("lift-up");
 });
-
-//Провекра

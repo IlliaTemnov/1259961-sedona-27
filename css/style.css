@@ -136,30 +136,37 @@ a {
 .blocktext .title {
     margin: 0;
     margin-bottom: 30px;
+    margin-left: 380px;
     line-height: 25px;
+    width: 440px;
+}
+.span-text {
+    color: #ffffff;
 }
 .feature-item-blue {
     background-color: none;
-    max-width: 400px;
-    min-height: 136px;
+    box-sizing: border-box;
+    width: 400px;
+    min-height: 150px;
     margin: 0;
     padding: 48px;
+    margin-bottom: 10px;
+}
+.feature-items img {
+    height: auto;
 }
 .feature-item-blue .text {
     font-size: 14px;
     line-height: 21px;
     color: #ffffff; 
-    white-space: pre-line;
     margin: 0;
-    margin-top: 22px;
-}  
+    margin-top: 26px;
+} 
 .feature-item-blue .title {
     font-size: 21px;
     line-height: 21px;
     color: #ffffff;
-    white-space: pre-line;
     margin: 0;
-    margin-bottom: 3px;
 }
 .advices-list {
     margin: 0;
@@ -173,14 +180,12 @@ a {
     min-height: 195px;
     flex-wrap: wrap;
     padding-top: 50px;
-    padding-bottom: 85px;
+    padding-bottom: 80px;
 }
 .advices-item .title {
     margin: 0;
     padding: 0;
     position: relative; 
-
-    
     margin-top: 55px;
 }
 .advices-item .one::before {
@@ -189,6 +194,7 @@ a {
     width: 75px;
     height: 72px;
     position: absolute;
+    left: 107px;
     bottom: 50px;
     margin: auto;
 }
@@ -210,53 +216,57 @@ a {
     height: 72px;
     position: absolute;
     bottom: 54px;
-    left: 98px;
+    left: 108px;
     padding: 0;
     margin: auto;
 }
 .advices-item .text {
     margin: 0;
     padding: 0;
-    margin-top: 5px;
+    margin-top: 25px;
 }
 .advices-item {
-    white-space: pre-line;
     line-height: 21px;
-    align-items: center;
     margin: 0px;
     margin-left: 14px;
+    margin-top: 55px;
     max-width: 290px;
 }
 .advices-list li:first-child {
-    margin-left: 18px;
+    margin-left: 10px;
 }
 .advices-list li:last-child {
     margin-right: 10px;
 }
 .advices-list li:nth-child(2) {
-    margin-left: 25px;
+    margin-left: 16px;
 }
 .feature-items {
     margin: 0;
     padding: 0;
     text-align: center;
+    align-items: center;
     background-color: #eeeeee;
     list-style: none;
     display: flex;
-    flex-direction: row ;
     justify-content: space-around;
     background-color: #81b3d2;
+    box-sizing: border-box;
     flex-wrap: wrap; 
     position: relative;
     z-index: 2;
     min-height: 256px;
 }
+.feature-items img{
+    height: auto;
+}
 .feature-items title{
     margin: 0;
     padding: 0;
 }
-.feature-item .title{
-    margin-bottom: 0;
+.feature-items .title{
+    margin: 0;
+    margin-bottom: 18px;
 }
 .feature-items:nth-child(4) {
     flex-direction: row-reverse;
@@ -266,26 +276,19 @@ a {
     background-color: #eeeeee;
 }
 .feature-item {
-    padding-left: 35px;
-    padding-top: 5px;
     padding: 0;
-    max-width: 265px;
+    margin-right: 5px;
+    max-width: 400px;
 }
-.feature-item:first-child{
-    padding-left: 35px;
+.feature-item p {
+    margin-top: 23px;
+    width: 265px;
 }
-.feature-item p{
-    margin-top: 20px;
+.feature-item .last{
+    width: 254px;
 }
 .feature-item .title {
-    margin-bottom: 4px;
-}
-.feature-items li:nth-child(2) {
-    padding-left: 50px;
-}
-.feature-items li:last-child {
-    padding-left: 30px;
-    padding-right: 15px;
+    margin-bottom: 25px;
 }
 .search {
     background-color: #ffffff;
@@ -317,7 +320,7 @@ a {
     line-height: 36px;
     margin: 0;
     margin-top: 50px;
-    margin-bottom: 11px;
+    margin-bottom: 25px;
 } 
 .search .text{
     padding: 15;
@@ -330,7 +333,7 @@ a {
     box-sizing: border-box;
     background-color: #ffffff;
     width: 568px;
-    height: 395px;
+    min-height: 395px;
     position: absolute;
     margin: auto;
     padding: 0;
@@ -351,7 +354,7 @@ a {
     margin-bottom: 29px;
 }
 .search-form input {
-    height: 38px;
+    min-height: 38px;
     width: 335px;
     background-color:#f2f2f2;
     border: none;
@@ -360,8 +363,8 @@ a {
     padding-left: 13px;
 }
 .double-row li {
-margin: 0;
-margin-bottom: 22px;
+    margin: 0;
+    margin-bottom: 22px;
 }
 .double-row input {
     height: 38px;
@@ -377,7 +380,7 @@ margin-bottom: 22px;
     justify-content: space-between;
 }
 .ul-wrap {
-    height: 175px;
+    min-height: 175px;
 }
 .button.more {
     color: #ffffff;
@@ -388,6 +391,7 @@ margin-bottom: 22px;
     font-size: 21px;
     margin: 0;
     padding: 0;
+    cursor: pointer;
 }
 .button.more:hover, .button.more:focus {
     background-color: #669ec0;
@@ -412,18 +416,21 @@ margin-bottom: 22px;
     margin-right: auto;
     position: absolute;
     opacity: 30%;
+    cursor: pointer;
 }
 .less-button {
     background-color:#f2f2f2;
     font-family: "Glyphter", sans-serif;
     color:  #a9a9a9;
     font-size: 11px;
+    cursor: pointer;
 } 
  .more-button {
     background-color:#f2f2f2;
     font-family: "Glyphter", sans-serif;
     color:  #a9a9a9;
     font-size: 11px;
+    cursor: pointer;
  }
  .adult label {
      margin-right: 39px;
@@ -436,6 +443,7 @@ margin-bottom: 22px;
  }
  .search-form-item-background {
      display: inline-block;
+     vertical-align: top;
  }
 .check-in-date {
     text-transform: uppercase;
@@ -577,6 +585,7 @@ margin-bottom: 22px;
 }
 .option {
     display: inline-block;
+    vertical-align: top;
 }
 .check-input {
     -webkit-appearance: none;
@@ -634,6 +643,7 @@ font-size: 14px;
     font-size: 21px;
     text-align: center;
     border: none;
+    cursor: pointer;
 }
 .button.reserve {
     position: relative;
@@ -643,10 +653,12 @@ font-size: 14px;
     width: 568px;
     height: 86px;
     z-index: 2;
+    cursor: pointer;
 }
 .button.reserve:hover, .button.reserve:focus  {
     background-color: #604e43;
     color: #ffffff;
+    cursor: pointer;
 }
 .button.reserve:active {
     background-color: #503e33;
@@ -814,6 +826,7 @@ font-size: 14px;
     font: inherit;
     background: none;
     border: none;
+    text-indent: 1px;
 }
 .range-controls {
     position: relative;
@@ -872,7 +885,7 @@ font-size: 14px;
     justify-content: flex-start;
     flex-wrap: wrap;
     margin: 0;
-    padding-bottom: 30px;
+    padding-bottom: 29px;
     padding-top: 30px;
     padding-left: 72px;
     padding-right: 73px;
@@ -884,11 +897,13 @@ article .hotel {
     display: inline-block;
     width: 110px;
     margin: 0;
+    vertical-align: top;
 }
 .hotel-description-price {
     display: inline-block;
     width: 142px;
     margin-left: 3px;
+    vertical-align: top;
 }
 .hotel-picture {
     margin: 0;
@@ -896,16 +911,18 @@ article .hotel {
 }
 .hotel-picture a{
     margin: 0;
+    display: flex;
 }
 .hotel-title {
     font-size: 21px;
-    line-height: 16px;
+    line-height: 26px;
     font-weight: bold;
     max-width: 350px;
     color: #000000;
     margin: 0;
     padding: 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top: -5px;
 }
 .hotel-rating {
     min-height: 90px;
@@ -950,13 +967,16 @@ article .hotel {
     color: #ffffff;
     padding: 3px 17px;
     display: inline-block;
+    vertical-align: top;
     margin-top: 15px;
+    cursor: pointer;
 }
 .button-more:hover, .button-more:focus {
     font-size: 14px;
     font-weight: bold;
     background-color: #669ec0;
     color: #ffffff;
+    cursor: pointer;
 }
 .button-more:active {
     font-size: 14px;
@@ -971,7 +991,9 @@ article .hotel {
     color: #ffffff;
     padding: 3px 17px;
     display: inline-block;
+    vertical-align: top;
     margin-top: 15px;
+    cursor: pointer;
 }
 .button-reserve:hover, .button-reserve:focus {
     font-size: 14px;
