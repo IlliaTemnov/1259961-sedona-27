@@ -326,6 +326,8 @@ a {
 }
 .search-form {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     box-sizing: border-box;
     background-color: #ffffff;
     width: 568px;
@@ -374,6 +376,9 @@ margin-bottom: 22px;
 .search-form .double-row {
     display: flex;
     justify-content: space-between;
+}
+.ul-wrap {
+    height: 175px;
 }
 .button.more {
     color: #ffffff;
