@@ -1,1 +1,1 @@
-var link=document.querySelector(".buttonreserve"),popup=document.querySelector(".search-form");link.addEventListener("click",function(e){e.preventDefault(),popup.classList.toggle("lift-down"),popup.classList.toggle("lift-up")});
+var link=document.querySelector(".buttonreserve"),popup=document.querySelector(".search-form");popup.classList.remove("lift-down"),popup.classList.add("lift-up"),link.addEventListener("click",function(e){e.preventDefault(),popup.classList.toggle("lift-down"),popup.classList.toggle("lift-up")});
